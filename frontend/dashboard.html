@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Project Management Dashboard</h1>
+
+  <!-- CREATE PROJECT -->
+  <div class="section">
+    <h2>Create Project</h2>
+
+    <input type="text" id="projectTitle" placeholder="Project Title">
+    
+    <input type="text" id="projectDescription" placeholder="Project Description">
+
+    <button onclick="createProject()">Create Project</button>
+  </div>
+
+  <!-- PROJECT LIST -->
+<div class="section">
+  <h2>Projects</h2>
+
+  <div class="filter-section">
+
+  <button onclick="setFilter('All')">
+    All
+  </button>
+
+  <button onclick="setFilter('To Do')">
+    To Do
+  </button>
+
+  <button onclick="setFilter('In Progress')">
+    In Progress
+  </button>
+
+  <button onclick="setFilter('Done')">
+    Done
+  </button>
+
+</div>
+
+  <!-- THIS IS REQUIRED -->
+  <div id="projectList"></div>
+</div>
+
+<div class="progress-container">
+  <div class="progress-bar" id="progress-${project._id}"></div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

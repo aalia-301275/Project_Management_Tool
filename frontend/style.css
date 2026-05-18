@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #cee2e7;
+  padding: 30px;
+  color: #000c0e;
+}
+
+/* PAGE TITLE */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+/* SECTIONS */
+.section {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(6, 39, 39, 0.08);
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #82c8d6;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #3b4c52;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* TASK CARDS */
+.task-card {
+  background: white;
+  border-left: 5px solid #0a1f2d;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* TASK TEXT */
+.task-card p {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  body {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* BUTTON ROW */
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* DELETE BUTTON STYLE */
+.delete-btn {
+  background-color: #214246;
+}
+
+.delete-btn:hover {
+  background-color: #07231f;
+}
+
+
+.task-card {
+  transition: 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #14272b;
+}
+
+.project-card p {
+  color: #121212;
+}
+
+.task-card {
+  margin-bottom: 15px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #0e313b, #82c8d6);
+  transition: width 0.3s ease;
+}
