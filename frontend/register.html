@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Register</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <h2>Register</h2>
+<body class="auth-body">
 
-  <input type="text" id="username" placeholder="Username" />
-  <input type="email" id="email" placeholder="Email" />
-  <input type="password" id="password" placeholder="Password" />
+  <div class="auth-container">
 
-  <button onclick="register()">Register</button>
+    <h2>Create Account</h2>
+    <p>Join the Project Management Tool</p>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="registerUser()">Register</button>
+
+    <p class="switch-text">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+
+  </div>
 
   <script src="auth.js"></script>
 </body>

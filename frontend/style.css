@@ -146,3 +146,90 @@ button:hover {
   background: linear-gradient(to right, #0e313b, #82c8d6);
   transition: width 0.3s ease;
 }
+
+
+.auth-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.auth-container {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.auth-container p {
+  margin-bottom: 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+}
+
+.auth-container input:focus {
+  border-color: #3b82f6;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-container button:hover {
+  background: #1d4ed8;
+}
+
+.switch-text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.switch-text a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+
+
+
+.logout-btn {
+  background-color: #00354c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
