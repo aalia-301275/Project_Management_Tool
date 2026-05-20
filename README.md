@@ -92,7 +92,7 @@ project-management-tool/
 
 ## 🤖 AI-Assisted Development (Transparency Note)
 
-Parts of this project, especially JavaScript logic and debugging, were developed with the assistance of AI tools (ChatGPT).
+Parts of this project, especially JavaScript logic and debugging, were developed with the assistance of AI tools (Claude, Chatgpt).
 
 However:
 
